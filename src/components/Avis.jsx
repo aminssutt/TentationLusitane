@@ -121,7 +121,7 @@ const Avis = () => {
         transition={{ duration: 0.8, delay: 0.8 }}
       >
         <a 
-          href="https://www.google.com/maps/place/77+Av.+du+G%C3%A9n%C3%A9ral+de+Gaulle,+92140+Clamart" 
+          href="https://www.google.com/search?sca_esv=c487812340739c8c&sxsrf=AE3TifNMXDASbKMVC_x4_3rLdW6r2QH27g:1764492065358&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E4Me_XDvdTKuxuexK0ItJIMB6BYVj44_JOYNR9YKqzVXRdR6iA3MCDbSkltae1qlZu0zd8svhJINNKymaEWO4LKY83e4&q=Tentation+Lusitane+Avis" 
           target="_blank" 
           rel="noopener noreferrer"
           className="google-review-btn"

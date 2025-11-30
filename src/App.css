@@ -1,0 +1,32 @@
+/* App.css - Global styles handled in index.css */
+#root {
+  width: 100%;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/* Smooth section transitions */
+section {
+  position: relative;
+}
+
+/* Loading animation for lazy images */
+img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+img[loading] {
+  opacity: 0;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 2px;
+}

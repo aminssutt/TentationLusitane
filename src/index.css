@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  /* Couleurs portugaises traditionnelles */
+  --primary-gold: #C9A227;
+  --primary-gold-light: #E5C76B;
+  --primary-dark: #1A1A1A;
+  --primary-cream: #FDF8F0;
+  --primary-terracotta: #B85C38;
+  --primary-blue: #1E3A5F;
+  --text-dark: #2C2C2C;
+  --text-light: #F5F5F5;
+  --accent-green: #2D5A3D;
+  
+  /* Azulejos inspired colors */
+  --azulejo-blue: #0B5394;
+  --azulejo-cream: #F7F3E9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--primary-cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-terracotta);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--primary-gold);
+  color: var(--text-light);
+}

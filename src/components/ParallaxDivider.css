@@ -1,0 +1,203 @@
+.parallax-divider {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-image-wrapper {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: -20%;
+}
+
+.parallax-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parallax-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.parallax-divider.dark .parallax-overlay {
+  background: rgba(10, 10, 10, 0.7);
+}
+
+.parallax-divider.light .parallax-overlay {
+  background: rgba(253, 248, 240, 0.85);
+}
+
+.parallax-text-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.quote-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 8rem;
+  line-height: 0.5;
+  margin-bottom: 1rem;
+}
+
+.parallax-divider.dark .quote-mark {
+  color: var(--primary-gold);
+  opacity: 0.3;
+}
+
+.parallax-divider.light .quote-mark {
+  color: var(--primary-terracotta);
+  opacity: 0.2;
+}
+
+.quote-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.parallax-divider.dark .quote-text {
+  color: #fff;
+}
+
+.parallax-divider.light .quote-text {
+  color: var(--text-dark);
+}
+
+.quote-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.quote-decoration span:first-child,
+.quote-decoration span:last-child {
+  width: 60px;
+  height: 1px;
+}
+
+.parallax-divider.dark .quote-decoration span:first-child,
+.parallax-divider.dark .quote-decoration span:last-child {
+  background: linear-gradient(90deg, transparent, var(--primary-gold));
+}
+
+.parallax-divider.light .quote-decoration span:first-child,
+.parallax-divider.light .quote-decoration span:last-child {
+  background: linear-gradient(90deg, transparent, var(--primary-terracotta));
+}
+
+.quote-decoration span:last-child {
+  transform: rotate(180deg);
+}
+
+.deco-diamond {
+  font-size: 0.75rem;
+}
+
+.parallax-divider.dark .deco-diamond {
+  color: var(--primary-gold);
+}
+
+.parallax-divider.light .deco-diamond {
+  color: var(--primary-terracotta);
+}
+
+/* Corners */
+.divider-corner {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.parallax-divider.dark .divider-corner {
+  border-color: rgba(201, 162, 39, 0.3);
+}
+
+.parallax-divider.light .divider-corner {
+  border-color: rgba(184, 92, 56, 0.2);
+}
+
+.divider-corner.top-left {
+  top: 2rem;
+  left: 2rem;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.divider-corner.top-right {
+  top: 2rem;
+  right: 2rem;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.divider-corner.bottom-left {
+  bottom: 2rem;
+  left: 2rem;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+
+.divider-corner.bottom-right {
+  bottom: 2rem;
+  right: 2rem;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+@media (max-width: 768px) {
+  .parallax-divider {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .quote-mark {
+    font-size: 5rem;
+  }
+  
+  .divider-corner {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .divider-corner.top-left,
+  .divider-corner.top-right {
+    top: 1rem;
+  }
+  
+  .divider-corner.bottom-left,
+  .divider-corner.bottom-right {
+    bottom: 1rem;
+  }
+  
+  .divider-corner.top-left,
+  .divider-corner.bottom-left {
+    left: 1rem;
+  }
+  
+  .divider-corner.top-right,
+  .divider-corner.bottom-right {
+    right: 1rem;
+  }
+}

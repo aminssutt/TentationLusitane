@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './Gateaux.css';
 
 // Import des images
@@ -53,15 +54,25 @@ const Gateaux = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulation d'envoi - à remplacer par EmailJS ou autre service
     try {
-      // Ici on peut intégrer EmailJS
-      // await emailjs.send('service_id', 'template_id', formData, 'public_key');
+      // Envoi via EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          date: formData.date || 'Non spécifiée',
+          message: formData.message
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
       
-      await new Promise(resolve => setTimeout(resolve, 1500));
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', date: '', message: '' });
     } catch (error) {
+      console.error('Erreur EmailJS:', error);
       setSubmitStatus('error');
     }
     

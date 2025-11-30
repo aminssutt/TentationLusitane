@@ -5,51 +5,43 @@ import './Avis.css';
 const avisGoogle = [
   {
     id: 1,
-    name: "Marie L.",
+    name: "Steven",
     rating: 5,
-    date: "Il y a 2 semaines",
-    text: "Les pastéis de nata sont tout simplement divins ! Un vrai goût du Portugal. Le personnel est très accueillant et les prix sont raisonnables. Je recommande vivement !",
-    avatar: "ML"
+    date: "Il y a une semaine",
+    text: "Des pâtisseries absolument délicieuses ! Je suis un client occasionnel, mais chaque passage est un vrai plaisir. Les saveurs me rappellent les goûts de mon enfance au Portugal, un vrai voyage nostalgique à chaque bouchée. Les patrons sont adorables et très attentionnés !",
+    avatar: "S"
   },
   {
     id: 2,
-    name: "Jean-Pierre D.",
+    name: "SAMA TRAORE",
     rating: 5,
-    date: "Il y a 1 mois",
-    text: "Excellente boulangerie portugaise ! Le pain est frais tous les jours et les viennoiseries sont délicieuses. Les gâteaux d'anniversaire sont magnifiques et savoureux.",
-    avatar: "JP"
+    date: "Il y a 2 mois",
+    text: "Une véritable pépite à Clamart ! La boulangerie Tentation Lusitane propose des produits d'une qualité exceptionnelle. L'accueil est toujours chaleureux, souriant et attentionné, ce qui donne envie de revenir à chaque visite. L'endroit est propre et agréable.",
+    avatar: "ST"
   },
   {
     id: 3,
-    name: "Sofia M.",
+    name: "Tatiana Delaye",
     rating: 5,
-    date: "Il y a 3 semaines",
-    text: "Uma padaria portuguesa autêntica em Clamart! Os pastéis de nata são perfeitos, como em Lisboa. Muito recomendado!",
-    avatar: "SM"
+    date: "Il y a 3 mois",
+    text: "Superbe boulangerie très accueillante, le personnel est très gentil et bienveillant. Les sandwichs sont excellents ! Il y a du choix et tout est bien garni. Bravo !",
+    avatar: "TD"
   },
   {
     id: 4,
-    name: "Thomas B.",
+    name: "Laurent Vrignaud",
     rating: 5,
-    date: "Il y a 1 mois",
-    text: "J'ai commandé un gâteau d'anniversaire personnalisé pour ma fille et c'était parfait ! Très beau et délicieux. Merci Tentation Lusitane !",
-    avatar: "TB"
+    date: "Il y a 6 mois",
+    text: "Nous revoilà au Portugal ! Beaucoup de choix en pâtisserie portugaise, ainsi que l'équipe très agréable.",
+    avatar: "LV"
   },
   {
     id: 5,
-    name: "Catherine R.",
-    rating: 5,
-    date: "Il y a 2 mois",
-    text: "Les bolas de Berlim sont incroyables ! Moelleux et la crème est délicieuse. Je viens ici tous les week-ends maintenant.",
-    avatar: "CR"
-  },
-  {
-    id: 6,
-    name: "Antonio S.",
-    rating: 5,
-    date: "Il y a 1 mois",
-    text: "Finalmente uma pastelaria portuguesa de qualidade na região! Produtos frescos, sabores autênticos. O frango assado também é excelente!",
-    avatar: "AS"
+    name: "MICKAEL VV",
+    rating: 3,
+    date: "Il y a 2 semaines",
+    text: "Cela fait plusieurs fois que je vais chercher des sandwichs, choix très important et assez copieux dans l'ensemble. Bon, certains sandwichs ont une association d'ingrédients étonnante. Prix dans la moyenne, gros avantage on peut payer facilement.",
+    avatar: "MV"
   }
 ];
 
@@ -84,7 +76,7 @@ const Avis = () => {
           <div className="rating-info">
             <div className="rating-stars">
               <StarRating rating={5} />
-              <span className="rating-number">5.0</span>
+              <span className="rating-number">4.6</span>
             </div>
             <span className="rating-count">Basé sur les avis Google</span>
           </div>
